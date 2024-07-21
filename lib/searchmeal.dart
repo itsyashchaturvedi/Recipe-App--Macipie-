@@ -52,7 +52,7 @@ class _SearchMealState extends State<SearchMeal> {
                   onTap: ()
                   {
                     if(widget.youtube=="") {
-                      widget.youtube="https://www.epicurious.com/search?q=${widget.name}";
+                      widget.youtube="https://www.youtube.com/results?search_query=${widget.name}";
                     }
                     Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView(linkUrl: widget.youtube,)));
                   },
